@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script/main.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">MPC</div>
+
+        <div class="header-avt">
+          <i class="fa-solid fa-user-tie"></i>
+          <div class="header-avt-hover">
+            <ul class="sub-menu">
+              <li class="sub-menu-item">
+                <i class="fa-solid fa-user-pen"></i>
+                <p class="text-secondary">Edit Profile</p>
+              </li>
+              <li class="sub-menu-item">
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <p class="text-secondary">Logout</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="app">
+      <div class="main-left">
+        <div class="search-input-container">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input type="text" class="search-input" />
+        </div>
+        <hr />
+        <ul>
+          <li class="main-left-item active">
+            <i class="fa-solid fa-house"></i>
+            <div class="main-left-item-text">Home</div>
+          </li>
+          <li class="main-left-item">
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <div class="main-left-item-text">Message</div>
+          </li>
+          <li class="main-left-item">
+            <i class="fa-solid fa-bell"></i>
+            <div class="main-left-item-text">Notifications</div>
+          </li>
+          <hr />
+          <li class="main-left-item">
+            <i class="fa-solid fa-user-group"></i>
+            <div class="main-left-item-text">Friends</div>
+          </li>
+          <li class="main-left-item">
+            <i class="fa-solid fa-bookmark"></i>
+            <div class="main-left-item-text">Saved</div>
+          </li>
+          <li class="main-left-item">
+            <i class="fa-solid fa-gamepad"></i>
+            <div class="main-left-item-text">Games</div>
+          </li>
+          <li class="main-left-item">
+            <i class="fa-solid fa-layer-group"></i>
+            <div class="main-left-item-text">Group</div>
+          </li>
+          <li class="main-left-item">
+            <i class="fa-solid fa-star"></i>
+            <div class="main-left-item-text">Favorite</div>
+          </li>
+        </ul>
+        <hr />
+        <div class="main-left-mode">
+          <div class="btn-mode-light" onclick="toggleMode()">
+            <i class="fa-solid fa-sun"></i>
+            <div class="btn-mode-light__text">Light</div>
+          </div>
+          <div class="btn-mode-dark" onclick="toggleMode()">
+            <i class="fa-solid fa-moon"></i>
+            <div class="btn-mode-light__text">Dark</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-mid">
+        <div class="create-post">
+          <div class="create-post-avt">
+            <div class="sub-avt">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+          </div>
+          <div class="create-post-input" id="openModal">
+            Hmm, What do you think,
+            <p>vantien</p>
+          </div>
+        </div>
+        <div class="newfeeds">
+          <div class="newfeed">
+            <div class="newfeed-heading">
+              <div class="new-feed-avt sub-avt">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="new-feed-status">
+                <div class="new-feed-status-name">name</div>
+                <div class="new-feed-status-content">
+                  <div class="new-feed-status-time">20/3</div>
+                  <div class="new-feed-status-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="new-feed-action">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="newfeed-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente pariatur modi? Corporis, similique est. Molestiae, ex,
+              enim possimus voluptatibus eveniet fugit magni minus repellat
+              soluta officia est maiores eos!
+            </div>
+            <div class="sub-avt newfeed-reaction" onclick="reaction(this)"(this)">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="newfeed">
+            <div class="newfeed-heading">
+              <div class="new-feed-avt sub-avt">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="new-feed-status">
+                <div class="new-feed-status-name">name</div>
+                <div class="new-feed-status-content">
+                  <div class="new-feed-status-time">20/3</div>
+                  <div class="new-feed-status-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="new-feed-action">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="newfeed-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente pariatur modi? Corporis, similique est. Molestiae, ex,
+              enim possimus voluptatibus eveniet fugit magni minus repellat
+              soluta officia est maiores eos!
+            </div>
+            <div class="sub-avt newfeed-reaction" onclick="reaction(this)">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="newfeed">
+            <div class="newfeed-heading">
+              <div class="new-feed-avt sub-avt">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="new-feed-status">
+                <div class="new-feed-status-name">name</div>
+                <div class="new-feed-status-content">
+                  <div class="new-feed-status-time">20/3</div>
+                  <div class="new-feed-status-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="new-feed-action">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="newfeed-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente pariatur modi? Corporis, similique est. Molestiae, ex,
+              enim possimus voluptatibus eveniet fugit magni minus repellat
+              soluta officia est maiores eos!
+            </div>
+            <div class="sub-avt newfeed-reaction" onclick="reaction(this)">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="newfeed">
+            <div class="newfeed-heading">
+              <div class="new-feed-avt sub-avt">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="new-feed-status">
+                <div class="new-feed-status-name">name</div>
+                <div class="new-feed-status-content">
+                  <div class="new-feed-status-time">20/3</div>
+                  <div class="new-feed-status-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="new-feed-action">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="newfeed-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente pariatur modi? Corporis, similique est. Molestiae, ex,
+              enim possimus voluptatibus eveniet fugit magni minus repellat
+              soluta officia est maiores eos!
+            </div>
+            <div class="sub-avt newfeed-reaction" onclick="reaction(this)">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="newfeed">
+            <div class="newfeed-heading">
+              <div class="new-feed-avt sub-avt">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="new-feed-status">
+                <div class="new-feed-status-name">name</div>
+                <div class="new-feed-status-content">
+                  <div class="new-feed-status-time">20/3</div>
+                  <div class="new-feed-status-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="new-feed-action">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="newfeed-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente pariatur modi? Corporis, similique est. Molestiae, ex,
+              enim possimus voluptatibus eveniet fugit magni minus repellat
+              soluta officia est maiores eos!
+            </div>
+            <div class="sub-avt newfeed-reaction" onclick="reaction(this)">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="newfeed">
+            <div class="newfeed-heading">
+              <div class="new-feed-avt sub-avt">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="new-feed-status">
+                <div class="new-feed-status-name">name</div>
+                <div class="new-feed-status-content">
+                  <div class="new-feed-status-time">20/3</div>
+                  <div class="new-feed-status-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="new-feed-action">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="newfeed-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente pariatur modi? Corporis, similique est. Molestiae, ex,
+              enim possimus voluptatibus eveniet fugit magni minus repellat
+              soluta officia est maiores eos!
+            </div>
+            <div class="sub-avt newfeed-reaction" onclick="reaction(this)">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="heading">Online Users</div>
+        <ul class="users">
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="text-primary">User 1</div>
+            <div class="user-online"></div>
+          </li>
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="text-primary">User 2</div>
+          </li>
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="text-primary">User 3</div>
+          </li>
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="text-primary">User 4</div>
+          </li>
+        </ul>
+        <div class="heading">Online Group</div>
+        <ul class="users">
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="text-primary">Group 1</div>
+          </li>
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="text-primary">Group 2</div>
+          </li>
+          <li class="user">
+            <div class="sub-avt">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="text-primary">Group 3</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Modal create new post -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">Good luck</div>
+      <div class="box"></div>
+    </footer>
+  </body>
+</html>

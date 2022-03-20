@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contest MPC</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/script.js"></script>
+  </head>
+  <body>
+    <h1 class="title">CONTEST MPC</h1>
+    <div class="container">
+      <div class="sub-sign">
+        <h2 class="sub-title text-center">Sign Up</h2>
+        <div class="form">
+          <input
+            type="text"
+            id="username"
+            class="form-control"
+            placeholder="Username"
+          />
+          <input
+            id="password"
+            class="form-control"
+            type="password"
+            placeholder="Password"
+          />
+          <input
+            id="confirmPassword"
+            type="password"
+            class="form-control"
+            placeholder="Confirm password"
+          />
+          <input type="button" class="btn btn-main" value="Sign Up" onclick="submitForm()" />
+        </div>
+        <p class="text-secondary" onclick="changeForm()">
+          Already have an account ?
+        </p>
+      </div>
+      <div class="sub-sign">
+        <h2 class="sub-title text-center">Sign In</h2>
+        <div class="form">
+          <input
+            type="text"
+            id="usernameLogin"
+            class="form-control"
+            placeholder="Username"
+          />
+          <input
+            id="passwordLogin"
+            type="password"
+            class="form-control"
+            placeholder="Password"
+          />
+          <input type="button" class="btn btn-main" value="Sign In" />
+        </div>
+
+        <p class="text-secondary" onclick="changeForm()">
+          Already have an account ?
+        </p>
+      </div>
+      <div id="disableForm" class="disableForm"></div>
+    </div>
+  </body>
+</html>
